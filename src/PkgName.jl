@@ -1,5 +1,9 @@
+__precompile__()
+
 module PkgName
 
-# package code goes here
+export hessenberg, eigen
+include("hessenberg.jl")
+include("eigenval.jl")
 
-end # module
+end
